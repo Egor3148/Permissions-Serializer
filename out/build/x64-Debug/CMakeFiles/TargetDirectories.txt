@@ -1,0 +1,3 @@
+C:/_George/BSU/3S/DS_sec/Permissions-Serializer/out/build/x64-Debug/CMakeFiles/PermsSerializer.dir
+C:/_George/BSU/3S/DS_sec/Permissions-Serializer/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/_George/BSU/3S/DS_sec/Permissions-Serializer/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

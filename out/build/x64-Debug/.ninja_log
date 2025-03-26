@@ -1,0 +1,16 @@
+# ninja log v6
+30	1373	7647072630628717	CMakeFiles/PermsSerializer.dir/src/encrypter.cpp.obj	b26785aa6b37f5e2
+95	2147	7646883695229121	CMakeFiles/PermsSerializer.dir/src/perms_manip.cpp.obj	461cea19c3c59e89
+71	1185	7646883694991755	CMakeFiles/PermsSerializer.dir/src/main.cpp.obj	23db21a0b7785439
+41	814	7647072630744319	CMakeFiles/PermsSerializer.dir/src/perms_serializer.cpp.obj	a6ab0d752799ebc1
+31	64	7647089744418393	clean	8c45b54705a541e8
+14	290	7647146830918814	build.ninja	e1f55233744fa63e
+1373	1801	7647072644060601	PermsSerializer.exe	e1659fa3f542bd8b
+27	543	7646883694551489	CMakeFiles/PermsSerializer.dir/src/aes.cpp.obj	507928b2cf122d1a
+31	54	7647146974345150	clean	8c45b54705a541e8
+24	189	7647146975005378	CMakeFiles/PermsSerializer.dir/src/aes.cpp.obj	bda5d0f4ec77204e
+35	889	7647146975115081	CMakeFiles/PermsSerializer.dir/src/main.cpp.obj	bb12d8bc716844f4
+63	893	7647146975395020	CMakeFiles/PermsSerializer.dir/src/perms_serializer.cpp.obj	a902930dcd94cb05
+45	1450	7647146975204978	CMakeFiles/PermsSerializer.dir/src/encrypter.cpp.obj	3bfa7ec90a62a10b
+54	1781	7647146975294984	CMakeFiles/PermsSerializer.dir/src/perms_manip.cpp.obj	c3ef077694fa7036
+1781	2101	7647146992566587	PermsSerializer.exe	e1659fa3f542bd8b
