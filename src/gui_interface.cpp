@@ -6,6 +6,7 @@
 #include <FL/Fl_Multiline_Output.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Text_Buffer.H>
+#include <FL/Fl_Native_File_Chooser.H>
 
 #include "../inc/gui_interface.h"
 #include "../inc/perms_serializer.h"
@@ -15,7 +16,24 @@
 
 Fl_Input* filePathInput;
 Fl_Input* passwordInput;
+Fl_Button* browseButton;
 Fl_Multiline_Output* outputArea;
+
+void browse_callback(Fl_Widget* widget, void* data) {
+    Fl_Native_File_Chooser fileChooser;
+    fileChooser.title("Choose the file");
+    fileChooser.type(Fl_Native_File_Chooser::BROWSE_FILE); // Choosing a file
+
+    // Filters
+    fileChooser.filter("DATENC files\t*.datenc\nAll files\t*.*");
+
+    // Showing dialogue
+    int result = fileChooser.show();
+
+    if (result == 0) {  // Success
+        filePathInput->value(fileChooser.filename());  // Input path setup
+    }
+}
 
 void serialize_callback(Fl_Widget* widget, void* data) {
     std::string sourcePath = filePathInput->value();
@@ -26,8 +44,19 @@ void serialize_callback(Fl_Widget* widget, void* data) {
         return;
     }
 
-    serialize(&sourcePath, &password);
-    outputArea->value("File serialized successfully.");
+    int result = serialize(&sourcePath, &password);
+    if(result == 0)
+    {
+        outputArea->value("File serialized successfully.");
+    }
+    else if (result == 1)
+    {
+        outputArea->value("ERROR: Failed to open file");
+    }
+    else if (result == 2)
+    {
+        outputArea->value("ERROR: Failed to encrypt file");
+    }
 }
 
 void deserialize_callback(Fl_Widget* widget, void* data) {
@@ -39,8 +68,19 @@ void deserialize_callback(Fl_Widget* widget, void* data) {
         return;
     }
 
-    deserialize(&sourcePath, &password);
-    outputArea->value("File deserialized successfully.");
+    int result = deserialize(&sourcePath, &password);
+    if (result == 0)
+    {
+        outputArea->value("File deserialized successfully.");
+    }
+    else if (result == 1)
+    {
+        outputArea->value("ERROR: Failed to open file");
+    }
+    else if (result == 2)
+    {
+        outputArea->value("ERROR: Decryption failed, data integrity corrupted");
+    }
 }
 
 int run_gui(int argc, char** argv) {
@@ -49,6 +89,9 @@ int run_gui(int argc, char** argv) {
 
     // Поле для ввода пути к файлу
     filePathInput = new Fl_Input(100, 20, 200, 30, "File Path:");
+
+    browseButton = new Fl_Button(310, 20, 80, 30, "Browse...");
+    browseButton->callback(browse_callback);
 
     // Поле для ввода пароля
     passwordInput = new Fl_Input(100, 60, 200, 30, "Password:");
