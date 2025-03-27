@@ -1,0 +1,317 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "fltk",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk-Debug-6068ece93fcdcd2c0f93.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "fltk",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "fltk/zlib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk.zlib-Debug-2bd33646d98ac3b4dad0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "fltk/zlib",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "fltk/png",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk.png-Debug-2f39e617e14613ef3045.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "fltk/png",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "fltk/jpeg",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk.jpeg-Debug-f27cb0cb604117a2e428.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "fltk/jpeg",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "fltk/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk.src-Debug-a570af2f93cc59d1deaa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "fltk/src",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "fltk/fluid",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk.fluid-Debug-382335f93753a0db58aa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "fltk/fluid",
+					"targetIndexes" : 
+					[
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"build" : "fltk/fltk-options",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fltk.fltk-options-Debug-35fb2f8748345c25329e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "fltk/fltk-options",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PermsSerializer",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"name" : "FLTK",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PermsSerializer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PermsSerializer-Debug-bc8956afa25154ebe7f8.json",
+					"name" : "PermsSerializer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "fltk::@fd19560740077aedf212",
+					"jsonFile" : "target-fltk-Debug-a801226fd6340f057dd5.json",
+					"name" : "fltk",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "fltk-options::@44f8237b241a72026e5c",
+					"jsonFile" : "target-fltk-options-Debug-783e163fcfde17314ba2.json",
+					"name" : "fltk-options",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "fltk-options-cmd::@44f8237b241a72026e5c",
+					"jsonFile" : "target-fltk-options-cmd-Debug-1457f5b2c03d28289df7.json",
+					"name" : "fltk-options-cmd",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "fltk_forms::@fd19560740077aedf212",
+					"jsonFile" : "target-fltk_forms-Debug-863c611f35ba984f27f6.json",
+					"name" : "fltk_forms",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "fltk_gl::@fd19560740077aedf212",
+					"jsonFile" : "target-fltk_gl-Debug-e091d4b2ad36f16f30db.json",
+					"name" : "fltk_gl",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "fltk_images::@fd19560740077aedf212",
+					"jsonFile" : "target-fltk_images-Debug-45a2e0ab24f4bcaf2bcf.json",
+					"name" : "fltk_images",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "fltk_jpeg::@42b24047a6d02014a933",
+					"jsonFile" : "target-fltk_jpeg-Debug-4f8e77c9d1043a9c1e4a.json",
+					"name" : "fltk_jpeg",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "fltk_png::@87a2345ff5bcb04603f1",
+					"jsonFile" : "target-fltk_png-Debug-4c953b32d2de46a39cd7.json",
+					"name" : "fltk_png",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "fltk_z::@58d6b2e6b53320319fb5",
+					"jsonFile" : "target-fltk_z-Debug-baa57e5020360af0a30d.json",
+					"name" : "fltk_z",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "fluid::@6e848ad79b3f171d8f57",
+					"jsonFile" : "target-fluid-Debug-2c5af957cd211ea1f104.json",
+					"name" : "fluid",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "fluid-cmd::@6e848ad79b3f171d8f57",
+					"jsonFile" : "target-fluid-cmd-Debug-749482415c940344bd41.json",
+					"name" : "fluid-cmd",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "fluid-lib::@6e848ad79b3f171d8f57",
+					"jsonFile" : "target-fluid-lib-Debug-e6676aa13f665e8ef214.json",
+					"name" : "fluid-lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@3ee085666c44a9664672",
+					"jsonFile" : "target-uninstall-Debug-96e73ef0878194793f01.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/_George/BSU/3S/DS_sec/Permissions-Serializer/out/build/x64-Debug",
+		"source" : "C:/_George/BSU/3S/DS_sec/Permissions-Serializer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
