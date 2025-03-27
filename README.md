@@ -8,7 +8,8 @@
  - It's supposed to be deployable on different platforms like *Windows, Linux or MacOS* or theoretically anything unix-like
  
 ## Usage
- - This tool gets basic permissions (*read, write, execute*) for file owner, serializes them with a file and encrypts them. <br> Deserialization proceeds vice versa
+ - This app can be distributed via single executable file with no additional libraries. You can find the executable in <br> the corresponding folder in <code>out</code>
+ - This app gets basic permissions (*read, write, execute*) for file owner, serializes them with a file and encrypts them. <br> Deserialization proceeds vice versa
  - Data integrity is protected via additional block of data which is checked after decryption
 
 ## Building
