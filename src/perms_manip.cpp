@@ -52,7 +52,7 @@ UniversalPermissions getPermissions(std::string filePath) {
 
     LocalFree(pSD);
 #else
-    fs::perms permissions = std::filesystem::status("filePath").permissions();
+    fs::perms permissions = std::filesystem::status(filePath).permissions();
     result.read = (permissions & fs::perms::owner_read) != fs::perms::none;
     result.write = (permissions & fs::perms::owner_write) != fs::perms::none;
     result.execute = (permissions & fs::perms::owner_exec) != fs::perms::none;
